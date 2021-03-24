@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Boxer Page</title>
 </head>
 <body>
-    
+    <h1>Boxer Entry Form:</h1>
+    <form action="/addboxer" method="POST">
+        <input type="text"  name="name" class="form-control" placeholder="Name (ex. Lennox)" size="40"><br>
+        <input type="text"  name="boxingrecord" class="form-control" placeholder="Boxing record (10 -1-2)" size="40"><br>
+        <input type="text"  name="division" class="form-control" placeholder="Enter division(ex. Heavy)" size="40"><br>
+        <input type="text" class="form-control" name="residence" placeholder="Enter Residence" size="40"><br>
+        <input type="submit" class="btn btn-primary" value="submit">
+    </form>
 </body>
 </html>
