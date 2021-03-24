@@ -1,5 +1,6 @@
 var boxer = {
-
+    
+    id: "",
     name: "",
     boxingrecord: "",
     division: "",

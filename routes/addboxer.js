@@ -6,12 +6,11 @@ var boxer = require('../model/boxerstructure.js');
 
 /* Create Boxer */
 router.post('/', function(req, res, next) {
-
     //Using the data model boxer from boxerstructure.js
     boxer.name = req.body.name;
     boxer.boxingrecord = req.body.boxingrecord;
     boxer.division = req.body.division;
-    boxer.password = req.body.residence;
+    boxer.residence = req.body.residence;
   
     //outputting boxer to console to verify that boxer was created
     console.log(boxer);
