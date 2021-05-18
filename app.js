@@ -9,6 +9,9 @@ var indexRouter = require('./routes/index');
 var boxersRouter = require('./routes/boxer');
 var createBoxerRouter = require('./routes/createboxer');
 var addBoxerRouter = require('./routes/addboxer');
+var addaccount = require('./routes/createaccount');
+var landcreate = require('./routes/creator');
+var loginroute = require('./routes/login');
 
 var app = express();
 
@@ -26,6 +29,9 @@ app.use('/', indexRouter);
 app.use('/boxer', boxersRouter);
 app.use('/createboxer', createBoxerRouter);
 app.use('/addboxer', addBoxerRouter);
+app.use('/account',addaccount);
+app.use('/accountcreator',landcreate);
+app.use('/login',loginroute);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

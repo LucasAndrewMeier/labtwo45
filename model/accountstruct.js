@@ -1,0 +1,4 @@
+var account = {
+    "email": "",
+    "password": ""
+}
